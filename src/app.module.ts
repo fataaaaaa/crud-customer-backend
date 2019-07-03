@@ -12,7 +12,7 @@ import { SkillModule } from './skill/skill.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/test', { useNewUrlParser: true }),
+    MongooseModule.forRoot('mongodb+srv://root:root@cluster0-vpf6w.mongodb.net/test?retryWrites=true', { useNewUrlParser: true }),
     CustomerModule,
     LoginModule,
     SkillModule
